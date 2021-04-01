@@ -428,6 +428,8 @@ q\ q #进入qq软件
 ----R:----
 reboot #重启
 
+rm /home/noi/1.doc #删除指定目录下的文件
+
 rm -rf /home/noi/linux #删除linux指定目录
 
 rsh -l hnlinux 192.168.1.88 /bin/ls #远程执行ls命令
