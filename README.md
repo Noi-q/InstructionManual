@@ -1,4 +1,2 @@
-#hello world
-#ce shi
-a = "hello world"
-print(a)
+git clone https://github.com/Noi-q/Noi.git
+

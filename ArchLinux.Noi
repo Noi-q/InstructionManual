@@ -1,0 +1,684 @@
+.#作者：Noi
+.#QQ:928401297
+.#反馈邮箱：noi.vcal@gmail.com
+.#仅能在Linux上完美呈现
+.#制作不易,尊重创作者
+.#相信能看见这里的朋友,都已经完成了基础的配置.还不赶快来试试！
+.#使用教程：安装好vim编辑器之后，Linux下运行vim,打开这个文件，进入后按'/',进行26字母大写+‘：’搜索.如果没有指定出现，按一下n.
+.#例：/N:
+.FH:
+|---------------------ArchLinux--------------------|
+|-------------------Noi在线指令库-------------------|
+|-----------------致于实质，必是经典-----------------|
+在线指令搜索栏：
+.                     
+.   ..       .    ...........    .
+.   . .      .    .         .
+.   .  .     .    .         .    .
+.   .   .    .    .         .    .
+.   .    .   .    .         .    . 
+.   .     .  .    .         .    .
+.   .      . .    .         .    .
+.   .       ..    .         .    .
+.   .        .    ...........    .
+......................................................
+.
+.                    ..........
+.                    .        .
+.                    .        .
+.                    .        .
+.                    .        .
+.                    .        .
+.                    .        .
+.                    .        .
+.                    .        .
+.                    .        .
+.                    .        .
+.                    .        .
+.                    .        .
+.                    .        .
+.                    .        .
+.                    .        .
+.           ..........        ..........
+.           .        .        .        .
+.           .        .        .        .
+.           .        .        .        .
+.           .        .        .        .
+.           .        .        .        .
+.           .        .        .        .
+.......................................................
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+----A:----
+ar rv one.bak 1.doc 2.doc #打包1.doc 2.doc文件
+
+ar rv two.bak *.doc #打包以.doc结尾的文件
+
+ar t two.bak #显示打包文件的内容
+
+ar d two.bak 1.doc 2.doc 3.doc #删除打包文件的成员文件
+
+ar t two.bak
+
+
+
+
+
+
+----B:----
+bzip2 -v temp.bz2 #解压.bz2文件，解压文件显示详细处理信息
+
+bzip2 -c 1.doc 2.doc 3.doc #压缩文件
+
+bzip2 -t temp.bz2 #检查文件完整性
+
+bunzip2 -v doc.bz2 #解压.bz2文件，解压文件显示详细处理信息
+
+
+
+
+----C:----
+
+c #清除界面
+
+clear #清楚界面
+
+cd /home/noi #切换到指定目录下
+
+cp 1.doc 2.doc #复制1.doc文档内容到2.doc
+
+cp 1.doc /home/noi/ #复制1.doc到noi目录下
+
+cmp
+
+cat -n text1 > text2 #把text1的文档内容加上行号后内容并且输入到text2这个文档里，且清空text2原有文档内容
+
+cat -b text1 > text2 >> text3 #打开text1和text2的文档内容加上行号（空白行不加）之后将两个文档内容复制到text3文档里
+
+cat /dev/null > /home/noi/text.txt #清空/home/noi/text.txt文档内容
+
+chroot /mnt/ls #把根目录改变成指定的目的目录
+
+chmod ugo+r text.txt #将文件text.txt设为所有人皆可读取
+
+chmod a+r 1.txt #将文件1.txt设为所有人皆可读取
+
+chmod ug+w,o-w 1.txt 2.txt #将文件1.txt和2.txt设为该文件拥有者，与其所属同一个群体者可写入，但其他以外的人则不可写入
+
+chmod u+x 1.py 将1.py设定为只有该文件拥有者可执行
+
+chmod -R a+r * #将当前目录下的所有文件与子目录皆设为任何人可读取
+
+chkconfig --list #检测rlogin服务是否开启
+
+chkconfig rsh on #开启rsh服务
+
+chkconfig -list #检测开启的服务
+
+
+----D:----
+
+
+df -h #查看磁盘空间
+
+df -hl #查看磁盘空间
+
+du -sh #查看当前目录所占空间大小
+
+du -sh /etc/vimrc #查看指定目录所占空间大小
+
+date #直接查看系统时间
+
+date '+%c' 
+
+date '+%D' #显示完整的时间
+
+date '+%x' #显示数字日期，年份两位数表示
+
+date '+%T' #显示日期，年份用四位数表示
+
+date '+%X' #显示24小时的格式
+
+date '+usr_time: $1:%M %P -hey' #按自己的格式输出时间
+
+date '+%T%n%D' #显示时间后跳行，再显示目前日期
+
+date '+%B %d' #显示月份与日期
+
+date --date '12:00:00' #显示日期与设定时间（12：00：00）
+
+date;sleep 1m;date #显示目前时间后延迟1分钟，之后再次显示时间
+
+----E:----
+
+et #直接打开wps表格
+
+et /home/noi/1.xls #打开指定目录下的表格
+
+
+----F:----
+firefox #直接打开火绒浏览器
+
+firefox www.baidu.com #用火绒浏览器打开指定网址
+
+free -t #以总和的形式查询内存的使用信息
+
+free -s 10 #周期性的查询内存使用信息，当前表示每10s执行一次命令
+
+flameshot gui #火焰截图快捷键指令
+
+----G:----
+g #查看git仓库路径位置
+
+gzip * #压缩当前目录下的所有文件
+
+gzip -dv * #解压当前目录下的文件，并列出详细信息
+
+gzip -l * #显示压缩文件的信息
+
+glxgears #查看屏幕帧数
+
+
+----H:----
+
+
+
+----I:----
+
+----J:----
+
+
+----K:----
+
+
+----L:----
+l /arch/arch.docx #查看指定目录文件的大小
+
+ls #查看当前目录下的文件
+
+ls /home/noi/1.doc #查看指定目录下的文件
+
+ls -l text #查看文件的时间属性
+
+last
+
+last -R -2
+
+last -2 minery
+
+last -n 5 -R #简略显示，并指定显示的个数
+
+last -n 5 -a -i #显示最后一列 显示主机ip地址
+
+less 1.doc #浏览1.doc文件
+
+less 1.doc 2.doc #浏览多个文件
+
+lsof /home/hjm/HJM #检查进程是否持有锁定文件
+
+
+----M:----
+mkdir /home/noi/1 #建立一个指定路径下1的目录
+
+mdir -/ a:\* #显示a盘中的内容
+
+
+----N:----
+
+
+----O:----
+
+
+
+
+----P:----
+poweroff #关机
+
+pwd #查看当前目录所在路径
+
+ps -ef|less #ps查看进程信息并通过less分页显示
+
+ps -ef #显示所有命令，连带命令行
+
+ps -A #显示进程信息
+
+ps -u root #显示root进程的用户信息
+
+pacman #arch软件包
+
+pacman -R package_name #删除单个软件包，保留其全部已经安装的依赖关系
+
+pacman -Rs package_name #删除指定软件包，及其所有没有被其他已安装软件包使用的依赖关系 
+
+pacman -Rsc package_name #删除软件包和所有依赖这个软件包的程序
+
+pacman -Sc #删除当前未安装的所有缓存包和未使用的同步数据库
+
+pacman -Sc #要从缓存中删除所有文件，请使用清除选项两次，这是最激进的方法，不会在缓存文件夹中留下任何内容
+
+pacman -U 本地软件包路径.pkg.tar.xz #安装不是来自远程存储库的“本地”包
+
+pacman -U https://www.example.com/repo/example.pkg.tar.xz #安装官方存储库中未包含的“远程”软件包
+
+pacman -Qo 软件包名 #查找软件包路径
+
+----Q:----
+q #退出终端
+
+q\ q #进入qq软件
+
+
+----R:----
+reboot #重启
+
+rm -rf /home/noi/linux #删除linux指定目录
+
+rsh -l hnlinux 192.168.1.88 /bin/ls #远程执行ls命令
+
+rpm -qi dejagnu-1.4.2-10.noarch.rpm #显示软件安装信息
+
+----S:----
+s #打开arch信息
+
+shutdown now #关机
+
+sleep 5m #休眠5分钟
+
+su -c ls root #变更帐号为root并在执行ls指令后退出变回原使用者
+
+su root -f #变更帐号为root并传入-f参数给新执行的shell
+
+su -clsung #变更帐号为clsung并改变工作目录至clsung的家目录（home dir）
+
+su root #切换到root用户
+
+su - root #切换到root用户
+
+sudo -l #显示sudo设置
+
+sudo !! #以root权限执行上一条命令
+
+sudo -u noi vi ～www/index.html #以noi用户身份编辑home目录下www目录中的index.html文件
+
+sudo -V #列出sudo的版本资讯
+
+sudo pacman -S package_name     #安装软件包
+
+sudo pacman -Syyu               #升级系统 yy标记强制刷新 u标记升级动作
+
+sudo pacman -R package_name     #删除软件包
+
+sudo pacman -Rs package_name    #删除软件包，及其所有没有被其他已安装软件包使用的依赖包
+
+sudo pacman -Qdt                #找出孤立包 Q为查询本地软件包数据库 d标记依赖包 t标记不需要的包 dt合并标记孤立包
+
+sudo pacman -Rs $(pacman -Qtdq) #删除孤立软件包
+
+sudo pacman -Fy                 #更新命令查询文件列表数据库
+
+sudo pacman -F xxx              #当不知道某个命令属于哪个包时，用来查询某个xxx命令属于哪个包
+
+systemctl start dhcpcd          #启动服务
+
+systemctl stop dhcpcd           #停止服务
+
+systemctl restart dhcpcd        #重启服务
+
+systemctl reload dhcpcd         #重新加载服务以及它的配置文件
+
+systemctl status dhcpcd         #查看服务状态
+
+
+systemctl enable dhcpcd         #设置开机启动服务
+
+systemctl enable --now dhcpcd   #设置服务为开机启动并立即启动这个单元:
+
+systemctl disable dhcpcd        #取消开机自动启动
+
+systemctl daemon-reload dhcpcd  #重新载入systemd配置 扫描新增或变更的服务单元 不会重新加载变更的配置 加载变更的配置用reload
+
+----T:----
+te #打开wps表格
+
+top #显示进程信息
+
+top -c #显示完整命令
+
+top -b #以批处理模式显示程序信息
+
+top -S #以累积模式显示程序信息
+
+top -n 2 #设置信息更新次数，当前表示更新两次后终止更新显示
+
+top -d 3 #设置信息更新时间，当前表示更新周期为3秒
+
+top -p #显示指定的进程信息，当前显示进程号为139的进程信息，cpu,内存占用率等
+
+top -n 10 #显示更新十次后退出
+
+top -s #使用者将不能利用交谈式指令来对行程下命令
+
+touch text #使用指令touch修改文件text的时间属性为当前系统时间
+
+touch file #如果指定的文件不存在，则会创建一个空白文件，名为file
+
+touch 1.doc #压缩文件，不是打包
+
+touch -czvf doc.tar.gz 1.doc #压缩1.doc文件为doc.tar.gz
+
+tar -tzvf doc.tar.gz #列出压缩文件内容
+
+tar -xzvf doc.tar.gz #解压文件
+
+
+----U:----
+unzip -l 1.zip #查看压缩文件中包含的文件
+
+unzip -v 1.zip #查看压缩文件目录信息，但不是解压该文件
+
+unarj e doc.arj #解压.arj文件
+
+
+----V:----
+vi/vim /home/noi/1.doc #在指定目录打开一个新文件
+
+vi/vim 1.doc #在当前目录打开一个新文件
+
+
+
+----W:----
+wps #直接打开wps文档
+
+wps /home/noi/1.doc #打开指定目录下的文档
+
+wpp #打开wps演示
+
+wpp /home/noi/1.ppt #打开指定目录下的演示
+
+wpspdf #直接打开pdf
+
+wpspdf /home/noi/1.pdf #打开指定目录下的pdf
+
+whoami #显示当前用户
+
+w #显示当前用户
+
+w -f #显示当前用户，不显示登录位置
+
+w -s #以简洁的模式显示出来当前用户
+
+w -h #显示当前用户，不显示标题
+
+who #显示当前登录系统的用户
+
+who -H #显示当前登录系统的用户，且显示标题栏
+
+who -T -H #显示当前登录系统的用户，显示标题栏，且显示终端属性
+
+who -m -H #只显示当前用户
+
+who -q #简洁模式显示系统用户
+
+----X:----
+
+
+
+----Y:----
+yay #同步并更新所有来自仓库和AUR的软件包
+
+yay -Sua #只同步更新AUR软件包
+
+yay -S 软件包名 #从仓库和AUR中安装一个新的软件包
+
+yay -Ss 关键词  #从仓库和AUr中搜索软件包数据库中的关键词
+
+yay -Ps #显示已经安装软件包和系统健康状态的统计数据
+
+
+----Z:----
+zip -q -r html.zip /home/noi #将/home/noi/这个目录下所有文件和文件夹打包为当前目录下的html.zip
+
+zip -q -r html.zip * #在当前目录下直接打包成html.zip
+
+zip -dv html.zip 1.doc #从压缩文件html.zip中删除1.doc
+
+
+----特殊:----
+
+.. #回到上一个目录
+
+/opt/google/chrome/google-chrome %U  #打开google-chrome浏览器
+cd /run/media/hjm/KINGSTON #切换到U盘目录下
+sudo pacman #赋予当前指令root权限
+neofetch #查看arch信息
+screenfetch #查看arch信息
+
+ffmpeg -video_size 1920x1080 -framerate 30 -f x11grab -i :0.0 -c:v libx24 -qp 0 -preset ultra fast ~/Video/screen.mkv
+
+https://zhuanlan.zhihu.com/p/138951848
+
+#删除软件包
+sudo pacman -Syyu  #更新系统和软件
+删除单个软件包，保留其全部已经安装的依赖关系
+pacman -R package_name
+删除指定软件包，及其所有没有被其他已安装软件包使用的依赖关系：
+pacman -Rs package_name
+要删除软件包和所有依赖这个软件包的程序:
+# pacman -Rsc package_name
+警告: 此操作是递归的，请小心检查，可能会一次删除大量的软件包。
+要删除软件包，但是不删除依赖这个软件包的其他程序：
+# pacman -Rdd package_name
+pacman 删除某些程序时会备份重要配置文件，在其后面加上*.pacsave扩展名。-n 选项可以删除这些文件：
+pacman -Rn package_name
+pacman -Rsn package_name
+
+用pacman应该就可以了
+
+
+systemctl start bluetooth #启动蓝牙服务
+
+pacvim #vim游戏启动
+
+
+
+
+
+-----Ter:-----
+F11     #切换全屏
+F11     #缩放终端
+F1      #打开手册
+S+C+f   #回滚搜索终端
+S+C+o   #水平分割
+S+C+e   #垂直分割
+S+C+s   #显示/隐藏滚动条
+S+Super+g #解组所有终端
+S+Super+t #解组所有标签页中的终端
+C+ +    #增大字号
+C+ -    #减小字号
+C+0     #恢复原始字体大小
+S+C+w   #关闭终端
+S+C+q   #关闭窗口
+S+C+c   #复制所选的文本
+S+C+v   #粘贴剪切板
+S+C+r   #重置终端
+S+C+g   #重置并清空终端
+C+Tab   #聚焦到下一个终端
+S+C+Tab #聚焦到上一个终端
+C+A+a   #编辑标签标题
+C+A+x   #编辑终端标题
+C+A+w   #编辑窗口标题
+A+下    #聚焦到下方的终端
+A+左    #聚焦到左方的终端
+S+C+n   #聚焦到下一个终端
+S+C+p   #聚焦到上一个终端
+A+右    #聚焦到右边的终端
+A+上    #聚焦到上边的终端
+Super+t #将所有终端合为一组
+Super+1 #插入终端编号
+Super+0 #插入适当的终端号
+A+l     #打开布局启动器窗口
+S+C+t   #创建一个新标签
+Super+I #启动一个新的Ter进程
+S+C+i   #创建一个新窗口
+S+C+A+a #切换窗口可见性
+
+
+
+
