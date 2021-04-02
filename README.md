@@ -8,3 +8,6 @@ git clone https://github.com/Noi-q/Noi.git
 ```
 cd Noi
 ```
+```
+vim Version_information.txt
+```
