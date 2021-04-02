@@ -5,12 +5,17 @@ Date:2021/1/3
 ArchLinux指令搜索文件诞生了！
 创建了基本Linux和有关Arch的指令。
 
-
-
 ArchLinux.Noi
 Edition:1.1
-Date:2021/4/2
+Date:2021/4/1
 版本介绍：
 更新了一些新指令。
 对Terminator终端终结者进行了基本的快捷键更新。
-更新了一些文档上的出错
+更新了一些文档上的出错.
+
+ArchLinux.Noi
+Edition:1.2
+Date:2021/4/2
+版本介绍：
+增添了一些关于这个系统的配置指令.
+删除一些无关紧要的东西.
