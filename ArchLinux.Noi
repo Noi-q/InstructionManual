@@ -604,6 +604,7 @@ zip -dv html.zip 1.doc #从压缩文件html.zip中删除1.doc
 
 ----特殊:----
 
+#下载好的软件和基本指令
 .. #回到上一个目录
 
 /opt/google/chrome/google-chrome %U  #打开google-chrome浏览器
@@ -612,10 +613,10 @@ sudo pacman #赋予当前指令root权限
 neofetch #查看arch信息
 screenfetch #查看arch信息
 
-ffmpeg -video_size 1920x1080 -framerate 30 -f x11grab -i :0.0 -c:v libx24 -qp 0 -preset ultra fast ~/Video/screen.mkv
 
-https://zhuanlan.zhihu.com/p/138951848
 
+
+#pacman包管理器
 #删除软件包
 sudo pacman -Syyu  #更新系统和软件
 删除单个软件包，保留其全部已经安装的依赖关系
@@ -631,12 +632,15 @@ pacman 删除某些程序时会备份重要配置文件，在其后面加上*.pa
 pacman -Rn package_name
 pacman -Rsn package_name
 
-用pacman应该就可以了
+
 
 
 systemctl start bluetooth #启动蓝牙服务
+systemctl start dhcpcd    #临时启动网卡
+systemctl enable dhcpcd   #开机自启网卡
 
-pacvim #vim游戏启动
+sudo pacman -S pacvim
+pacvim #vim游戏指令启动
 
 
 
