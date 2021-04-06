@@ -379,6 +379,7 @@ mkdir /home/noi/1 #建立一个指定路径下1的目录
 
 mdir -/ a:\* #显示a盘中的内容
 
+mv 1.txt /home/Noi #移动文件到指定目录下
 
 ----N:----
 neofetch #查看arch信息
