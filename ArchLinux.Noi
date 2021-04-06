@@ -381,7 +381,7 @@ mdir -/ a:\* #显示a盘中的内容
 
 
 ----N:----
-
+neofetch #查看arch信息
 
 ----O:----
 
@@ -438,6 +438,8 @@ rpm -qi dejagnu-1.4.2-10.noarch.rpm #显示软件安装信息
 
 ----S:----
 s #打开arch信息
+
+screenfetch #查看arch信息
 
 shutdown now #关机
 
@@ -496,6 +498,7 @@ systemctl disable dhcpcd        #取消开机自动启动
 
 systemctl daemon-reload dhcpcd  #重新载入systemd配置 扫描新增或变更的服务单元 不会重新加载变更的配置 加载变更的配置用reload
 
+systemctl start bluetooth #启动蓝牙服务
 ----T:----
 te #打开wps表格
 
@@ -604,14 +607,7 @@ zip -dv html.zip 1.doc #从压缩文件html.zip中删除1.doc
 
 ----特殊:----
 
-#下载好的软件和基本指令
-.. #回到上一个目录
 
-/opt/google/chrome/google-chrome %U  #打开google-chrome浏览器
-cd /run/media/hjm/KINGSTON #切换到U盘目录下
-sudo pacman #赋予当前指令root权限
-neofetch #查看arch信息
-screenfetch #查看arch信息
 
 
 
@@ -635,18 +631,13 @@ pacman -Rsn package_name
 
 
 
-systemctl start bluetooth #启动蓝牙服务
-systemctl start dhcpcd    #临时启动网卡
-systemctl enable dhcpcd   #开机自启网卡
-
-sudo pacman -S pacvim
 pacvim #vim游戏指令启动
 
 
 
 
 
------Ter:-----
+-----Terminator:-----
 F11     #切换全屏
 F11     #缩放终端
 F1      #打开手册
