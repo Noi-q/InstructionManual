@@ -42,3 +42,9 @@ Date:2021/4/6
 版本介绍:
 优化了ArchLinux.Noi指令一些潜在的错误
 更新Noi作者的名字
+
+ArchLinux.Noi
+Edition:1.5
+Date:2021/4/6
+版本介绍:
+更新了一些基础指令！
