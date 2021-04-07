@@ -480,26 +480,29 @@ sudo pacman -Fy                 #更新命令查询文件列表数据库
 
 sudo pacman -F xxx              #当不知道某个命令属于哪个包时，用来查询某个xxx命令属于哪个包
 
-systemctl start dhcpcd          #启动服务
+systemctl start dhcpcd          #立马启动网络服务
 
-systemctl stop dhcpcd           #停止服务
+systemctl stop dhcpcd           #停止网络服务
 
-systemctl restart dhcpcd        #重启服务
+systemctl restart dhcpcd        #重启网络服务
 
-systemctl reload dhcpcd         #重新加载服务以及它的配置文件
+systemctl reload dhcpcd         #重新加载网络服务以及它的配置文件
 
-systemctl status dhcpcd         #查看服务状态
+systemctl status dhcpcd         #查看网络服务状态
 
 
-systemctl enable dhcpcd         #设置开机启动服务
+systemctl enable dhcpcd         #设置开机启动网络服务
 
-systemctl enable --now dhcpcd   #设置服务为开机启动并立即启动这个单元:
+systemctl enable --now dhcpcd   #设置网络服务为开机启动并立即启动这个单元:
 
-systemctl disable dhcpcd        #取消开机自动启动
+systemctl disable dhcpcd        #取消开机自动启动网络服务
 
 systemctl daemon-reload dhcpcd  #重新载入systemd配置 扫描新增或变更的服务单元 不会重新加载变更的配置 加载变更的配置用reload
 
-systemctl start bluetooth #启动蓝牙服务
+systemctl start bluetooth #立马启动蓝牙服务
+
+systemctl enable bluetooth #开机启动蓝牙服务
+
 ----T:----
 te #打开wps表格
 
