@@ -327,6 +327,26 @@ flameshot gui #火焰截图快捷键指令
 ----G:----
 g #查看git仓库路径位置
 
+git init #创建一个空的git仓库或重新初始化一个已存在的仓库
+
+git clone https://github.com/Noi-q/Noi.git #克隆github上指定的仓库 克隆仓库到一个新目录
+
+git mv #移动或重命名一个文件，目录或符号链接
+
+git restore #恢复工作区文件
+
+git add #添加文件内容至搜索
+
+git rm #从工作区和索引中删除文件
+
+git status #显示工作区状态
+
+git log #显示提交日志
+
+git commit #记录变更到仓库
+
+git push #更新远程引用或相关的对象
+
 gzip * #压缩当前目录下的所有文件
 
 gzip -dv * #解压当前目录下的文件，并列出详细信息
@@ -430,6 +450,8 @@ q\ q #进入qq软件
 reboot #重启
 
 rm /home/noi/1.doc #删除指定目录下的文件
+
+rm -r * #删除当前目录下的所有文件
 
 rm -rf /home/noi/linux #删除linux指定目录
 
