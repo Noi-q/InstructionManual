@@ -246,8 +246,6 @@ cp 1.doc 2.doc #复制1.doc文档内容到2.doc
 
 cp 1.doc /home/noi/ #复制1.doc到noi目录下
 
-cmp
-
 cat -n text1 > text2 #把text1的文档内容加上行号后内容并且输入到text2这个文档里，且清空text2原有文档内容
 
 cat -b text1 > text2 >> text3 #打开text1和text2的文档内容加上行号（空白行不加）之后将两个文档内容复制到text3文档里
