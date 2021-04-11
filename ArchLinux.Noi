@@ -304,6 +304,8 @@ date --date '12:00:00' #显示日期与设定时间（12：00：00）
 
 date;sleep 1m;date #显示目前时间后延迟1分钟，之后再次显示时间
 
+django-admin.py startproject Noi #创建django项目
+
 ----E:----
 
 et #直接打开wps表格
@@ -374,6 +376,9 @@ ls #查看当前目录下的文件
 ls /home/noi/1.doc #查看指定目录下的文件
 
 ls -l text #查看文件的时间属性
+
+ln 1.txt 2.txt #建立硬链接
+lscpu #查看电脑配置和系统信息
 
 last
 
