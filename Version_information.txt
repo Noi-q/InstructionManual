@@ -69,3 +69,9 @@ Edition:1.8
 Date:2021/4/9
 版本介绍:
 删除了一些杂项指令.
+
+ArchLinux.Noi
+Edition:1.9
+Date:2021/4/11
+版本介绍:
+增加了一些新.
