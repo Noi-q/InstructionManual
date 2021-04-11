@@ -635,7 +635,7 @@ zip -dv html.zip 1.doc #从压缩文件html.zip中删除1.doc
 
 
 ----特殊:----
-
+./.local/bin/django-admin startproject Noi #创建Django项目
 
 
 
