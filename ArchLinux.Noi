@@ -513,7 +513,6 @@ systemctl reload dhcpcd         #重新加载网络服务以及它的配置文�
 
 systemctl status dhcpcd         #查看网络服务状态
 
-
 systemctl enable dhcpcd         #设置开机启动网络服务
 
 systemctl enable --now dhcpcd   #设置网络服务为开机启动并立即启动这个单元:
