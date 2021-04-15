@@ -402,6 +402,7 @@ mdir -/ a:\* #显示a盘中的内容
 
 mv 1.txt /home/Noi #移动文件到指定目录下
 
+mount /dev/sda1 /mnt/usb
 ----N:----
 neofetch #查看arch信息
 
