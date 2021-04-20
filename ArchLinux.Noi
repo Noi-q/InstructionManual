@@ -455,6 +455,10 @@ rm /home/noi/1.doc #删除指定目录下的文件
 
 rm -r * #删除当前目录下的所有文件
 
+rm -f *.txt #删除当前目录下所有.txt的文件（没有提示）
+
+rm -r *.txt #删除当前目录下所有.txt的文件（有提示）
+
 rm -rf /home/noi/linux #删除linux指定目录
 
 rsh -l hnlinux 192.168.1.88 /bin/ls #远程执行ls命令
@@ -634,6 +638,7 @@ zip -dv html.zip 1.doc #从压缩文件html.zip中删除1.doc
 
 ----特殊:----
 ./.local/bin/django-admin startproject Noi #创建Django项目
+
 
 
 
