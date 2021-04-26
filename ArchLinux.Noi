@@ -563,6 +563,7 @@ tar -tzvf doc.tar.gz #列出压缩文件内容
 
 tar -xzvf doc.tar.gz #解压文件
 
+tar xvf doc.tar.gz #解压文件
 
 ----U:----
 unzip -l 1.zip #查看压缩文件中包含的文件
@@ -637,7 +638,8 @@ zip -dv html.zip 1.doc #从压缩文件html.zip中删除1.doc
 
 
 ----特殊:----
-./.local/bin/django-admin startproject Noi #创建Django项目
+#创建Django项目 利用django路径
+./.local/bin/django-admin startproject Noi
 
 
 
@@ -660,10 +662,6 @@ pacman 删除某些程序时会备份重要配置文件，在其后面加上*.pa
 pacman -Rn package_name
 pacman -Rsn package_name
 
-
-
-
-pacvim #vim游戏指令启动
 
 
 
@@ -707,4 +705,3 @@ S+C+t   #创建一个新标签
 Super+I #启动一个新的Ter进程
 S+C+i   #创建一个新窗口
 S+C+A+a #切换窗口可见性
-
