@@ -465,6 +465,7 @@ rsh -l hnlinux 192.168.1.88 /bin/ls #远程执行ls命令
 
 rpm -qi dejagnu-1.4.2-10.noarch.rpm #显示软件安装信息
 
+ranger #打开ranger文件管理程序
 ----S:----
 s #打开arch信息
 
