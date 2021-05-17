@@ -268,7 +268,7 @@ chkconfig rsh on #开启rsh服务
 
 chkconfig -list #检测开启的服务
 
-
+chsh -s /bin/zsh #更改终端为zsh版本
 ----D:----
 
 
@@ -530,6 +530,8 @@ systemctl daemon-reload dhcpcd  #重新载入systemd配置 扫描新增或变更
 systemctl start bluetooth #立马启动蓝牙服务
 
 systemctl enable bluetooth #开机启动蓝牙服务
+
+source ~/.zshrc #启动zshrc配置文件
 
 ----T:----
 te #打开wps表格
