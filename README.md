@@ -1,6 +1,12 @@
 基于GNU/Linux--ArchLinux指令
 ===========================
 #### 使用者，请先浏览一下 Version_information.txt 这个版本信息文件.
+
+#### 下载vim/其他linux系统自行下载
+```sh
+sudo pacman -S vim
+```
+
 ```sh
 git clone https://github.com/Noi-q/Noi.git
 ```
